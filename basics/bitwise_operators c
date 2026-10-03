@@ -2,7 +2,7 @@
 
 int main()
 {
-    int x = 5;   // Binary: 0101
+    int x = 13;
 
     printf("Original value = %d\n", x);
 
@@ -10,13 +10,23 @@ int main()
     x = x | (1 << 1);
     printf("After setting bit 1 = %d\n", x);
 
-    // Clear bit 2
-    x = x & ~(1 << 2);
-    printf("After clearing bit 2 = %d\n", x);
+    // Clear bit 3
+    x = x & ~(1 << 3);
+    printf("After clearing bit 3 = %d\n", x);
 
     // Toggle bit 0
     x = x ^ (1 << 0);
     printf("After toggling bit 0 = %d\n", x);
+
+    // Check bit 2
+    if (x & (1 << 2))
+    {
+        printf("Bit 2 is set\n");
+    }
+    else
+    {
+        printf("Bit 2 is clear\n");
+    }
 
     return 0;
 }
