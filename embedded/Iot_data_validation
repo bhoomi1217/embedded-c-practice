@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int temperature = 25;
+     
+     if(temperature>20 && temperature<40){
+
+         printf("sensor data valid");
+     }
+     else{
+
+        printf("invalid sensor data"); 
+     }
+
+    return 0;
+}
